@@ -1,6 +1,7 @@
 import React, { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 
 import createStoreHelper from '../redux/create_store_helper';
 
@@ -27,9 +28,9 @@ class ReduxProvider extends Component {
         }
         return(
             <Provider store={this.state.store}>
-                <Router>
+                <HashRouter>
                     {Children.only(this.props.children)}
-                </Router>
+                </HashRouter>
             </Provider>
         );
     }
