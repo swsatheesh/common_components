@@ -36,7 +36,7 @@ class ReduxProvider extends Component {
     }
 }
 
-PouchProvider.propTypes = {
+ReduxProvider.propTypes = {
     children: PropTypes.element,
     reducers: PropTypes.func.isRequired,
     config: PropTypes.object.isRequired
